@@ -173,3 +173,4 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 "client_secret.json" 
+"client_secret.json" 
