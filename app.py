@@ -27,7 +27,7 @@ app.config['MAIL_PORT'] = 465  # Change to 465 for SSL
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True  # Enable SSL
 app.config['MAIL_USERNAME'] = 'sszala8878@gmail.com'
-app.config['MAIL_PASSWORD'] = 'uxlpzopnhazdjmyg '  # Use the generated App Password
+app.config['MAIL_PASSWORD'] = 'uxlpzopnhazdjmyg'  # Use the generated App Password
 app.config['MAIL_DEFAULT_SENDER'] = 'sszala8878@gmail.com'
 
 mail = Mail(app)
@@ -126,4 +126,4 @@ def logout():
     return redirect(url_for("UI"))  # Redirect to UI instead of index
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8000)
